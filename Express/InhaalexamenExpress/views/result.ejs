@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Comments</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body>
+<% sort_by:'name'
+if (result !== null){ %>
+    Naam student: <%= name %>
+    <br/>
+    Examen: <%= exam %>
+    <br/>
+    Reden: <%= reason %>
+    <br/>
+    Indien datum: <%= date %>
+    <br/>
+<%} else { %>
+    <h1> Geen herexamens ingediend </h1>
+<% } %>
+<br/><br/>
+<a href="/">SEARCH</a>
+<a href="/clear">CLEAR STORAGE</a>
+</body>
+</html>
